@@ -204,7 +204,7 @@
         const url = new URL(`${window.location.href}`);
         console.log(url)
         const paramsString = 'carlos@blankdev.io';
-        
+        url.searchParams.append('email', paramsString)
         console.log(url.searchParams.append('email', paramsString));
 
     </script>
