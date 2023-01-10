@@ -763,6 +763,11 @@ video {
   background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
 
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 132 251 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -849,6 +854,10 @@ video {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -884,6 +893,11 @@ video {
   .ts\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .ts\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
