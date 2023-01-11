@@ -1,15 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+    corePlugins: {
+      preflight: false,
+    },
     content: [
-      './config/*.json', 
-      './layout/*.liquid', 
-      './assets/*.liquid', 
-      './sections/*.liquid', 
-      './snippets/*.liquid', 
-      './templates/*.liquid', 
-      './templates/*.json', 
-      './templates/customers/*.liquid', 
-      './templates/customers/*.json',
+      './courses/*/*.html', 
       './*.html'
     ],
     theme: {
