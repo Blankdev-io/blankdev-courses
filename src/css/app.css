@@ -5,4 +5,7 @@
 
 .collapse {
     visibility: unset;
-  }
+}
+header p {
+    margin:0;
+}
