@@ -9,3 +9,7 @@
 header p {
     margin:0;
 }
+a {
+    color: unset;
+    text-decoration: none; /* no underline */
+}

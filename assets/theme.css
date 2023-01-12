@@ -112,6 +112,10 @@
   position: static;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -209,6 +213,14 @@
   height: 0.75rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
 .w-2\/3 {
   width: 66.666667%;
 }
@@ -232,6 +244,10 @@
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-screen-dm {
@@ -364,6 +380,11 @@
   background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
 
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -389,6 +410,10 @@
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .px-2 {
@@ -464,8 +489,17 @@
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
 .opacity-25 {
   opacity: 0.25;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .outline {
@@ -487,6 +521,12 @@
 
 header p {
   margin:0;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+  /* no underline */
 }
 
 @media (min-width: 768px) {
