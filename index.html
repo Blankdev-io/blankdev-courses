@@ -224,13 +224,15 @@
             </main>
         </template>
         <template v-else>
-            <div class="flex justify-center items-center absolute top-0 z-50 bg-gray-500 bg-opacity-50 h-screen w-screen">
-                <div class="flex flex-col justify-center items-center bg-white rounded-md w-1/2 h-1/2 p-10">
+            <div class="flex justify-center items-center absolute top-0 z-50 bg-gray-300 bg-opacity-50 h-screen w-screen">
+                <div class="flex flex-col justify-center items-center bg-white rounded-md w-1/2 h-1/5 p-10">
                     <img class="h-8 pr-4" src="assets/blankdev-logo-blue.svg">
                     <form>
-                        <h2>Please enter you email to continue</h2>
-                        <input v-model="email" type="email" name="email" id="email">
-                        <button @click="getEmail($event)">Submit</button>
+                        <h2>Please enter your email to continue</h2>
+                        <div class="flex justify-between gap-4">
+                            <input class="border-none rounded-md bg-slate-200 py-2 px-5 w-full" v-model="email" type="email" name="email" id="email">
+                            <button class="rounded-md border-none  py-2 px-4" @click="getEmail($event)">Submit</button>
+                        </div>
                         <br>
                         <span v-if="errorMeassage != ''" class="text-red-600">{{ errorMeassage }}</span>
                     </form>
