@@ -275,6 +275,7 @@
                 this.email = currentEmail.get('email');
 
                 console.log(this.email)
+                this.validEmail = /^[^@]+@\w+(\.\w+)+\w$/.test(this.email);
             },
             methods: {
                 getEmail(e) {
